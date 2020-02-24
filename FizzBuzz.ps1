@@ -1,3 +1,9 @@
 ﻿function FizzBuzz([int]$number) {
-    return $number
+    if (($number % 3) -eq 0) {
+        return 'Fizz'    
+    } else {
+        return $number    
+    }
+    
+    
 }

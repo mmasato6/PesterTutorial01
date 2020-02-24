@@ -6,4 +6,7 @@ Describe "FizzBuzz" {
     It "3,5の約数以外はそのまま" {
         FizzBuzz -Number 1 | Should Be '1'
     }
+    It "3の倍数ならFizz"{
+        FizzBuzz -Number 3 | Should Be 'Fizz'
+    }
 }
