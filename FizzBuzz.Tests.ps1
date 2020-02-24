@@ -3,7 +3,7 @@ $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.Tests\.', '.'
 . "$here\$sut"
 
 Describe "FizzBuzz" {
-    It "does something useful" {
-        $true | Should Be $false
+    It "3,5の約数以外はそのまま" {
+        FizzBuzz -Number 1 | Should Be '1'
     }
 }

@@ -1,3 +1,3 @@
-﻿function FizzBuzz {
-
+﻿function FizzBuzz([int]$number) {
+    return $number
 }
