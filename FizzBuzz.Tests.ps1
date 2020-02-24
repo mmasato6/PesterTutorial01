@@ -9,4 +9,7 @@ Describe "FizzBuzz" {
     It "3の倍数ならFizz"{
         FizzBuzz -Number 3 | Should Be 'Fizz'
     }
+    It "5の倍数ならBuzz"{
+        FizzBuzz -Number 5 | Should Be 'Buzz'
+    }
 }
